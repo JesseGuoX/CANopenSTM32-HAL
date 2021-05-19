@@ -32,11 +32,14 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "CANopen.h"
 
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
+extern CO_t *CO ;
+extern uint32_t Timer1msCount;
 
 /* USER CODE END ET */
 
@@ -58,6 +61,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define D2_Pin GPIO_PIN_14
+#define D2_GPIO_Port GPIOC
+#define D1_Pin GPIO_PIN_15
+#define D1_GPIO_Port GPIOC
+#define D4_Pin GPIO_PIN_0
+#define D4_GPIO_Port GPIOC
+#define D3_Pin GPIO_PIN_1
+#define D3_GPIO_Port GPIOC
+#define S1_Pin GPIO_PIN_2
+#define S1_GPIO_Port GPIOC
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
