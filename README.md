@@ -24,3 +24,17 @@ TPDO transmission type is 0x01, which means transmiting is synchronous after eve
 
 ### RPDO
 Project use four onboard LEDs as digital output for RPDO;
+
+## How to build
+
+1. Fetch source
+```
+git clone https://github.com/Jexbat/CANopenSTM32-HAL.git
+git submodule update --init --recursive
+```
+
+2. Open STM32CubeIDE
+
+`File`->`Open Projects From File System...`;
+Click `Directory`,select project folder then click `finish`;
+Now you can build project and download to your board.
